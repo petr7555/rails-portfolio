@@ -65,6 +65,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  line-height: 1.4rem;
 }
 
 .header {
@@ -74,7 +75,7 @@ body {
   margin: 2rem 0;
 }
 
-a:hover {
+.menu__item a:hover {
   text-decoration: underline;
 }
 
@@ -87,10 +88,6 @@ a:hover {
   padding: 1rem;
   text-align: center;
   cursor: pointer;
-}
-
-.menu__item:hover {
-  text-decoration: underline;
 }
 
 .my-name {
@@ -117,6 +114,12 @@ a:hover {
 
 h1 {
   font-size: 3rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .main-text {
@@ -142,14 +145,16 @@ h1 {
 
 .btn:hover {
   background-color: #cc6cff;
-  text-decoration: none;
 }
 
 .footer {
   text-align: right;
   padding: 0 17.5%;
   font-weight: 100;
-  line-height: 1.4rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .social {
@@ -173,4 +178,57 @@ h1 {
   margin: auto;
   width: 50%;
   max-width: 1000px;
+}
+
+.portfolio-grid {
+  margin: 1rem auto 3rem auto;
+  padding: 0 10vw;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.portfolio-grid img {
+  max-width: 100%;
+}
+
+.project {
+  color: black;
+  transition: color 0.5s;
+  padding: 2rem 1rem;
+}
+
+.project:hover {
+  color: #cc6cff;
+  transition: color 0.5s;
+}
+
+.project p {
+  font-weight: 100;
+}
+
+.thumbnail-header {
+  background-color: #eaeff4;
+  height: 1.25rem;
+  width: 100%;
+}
+
+.thumbnail-header-btn {
+  background-color: #fff;
+  border-radius: 100%;
+  float: left;
+  height: 0.625rem;
+  margin: 0.3125rem 0 0 0.3125rem;
+  width: 0.625rem;
+}
+
+.project-title {
+  margin: 1rem 0 0.4rem 0;
 }

@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Project.create(title: "Innovation Cloud", description: "Innovation Cloud description", image: "portfolio/InnovationCloud.png", link: "https://google.com")
+Project.create(title: "Saving Data", description: "Saving Data description", image: "portfolio/SavingData.png", link: "https://google.com")
+Project.create(title: "Associations I", description: "Associations I description", image: "portfolio/AssociationsI.png", link: "https://google.com")
+Project.create(title: "Getting Started", description: "Getting Started description", image: "portfolio/GettingStarted.png", link: "https://google.com")
+Project.create(title: "Threadly", description: "Threadly description", image: "portfolio/Threadly.png", link: "https://google.com")
+Project.create(title: "Bookmarks", description: "Bookmarks description", image: "portfolio/Bookmarks.png", link: "https://google.com")

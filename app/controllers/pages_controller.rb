@@ -4,6 +4,6 @@ class PagesController < ApplicationController
   end
 
   def portfolio
-
+    @projects = Project.order(created_at: :asc)
   end
 end
