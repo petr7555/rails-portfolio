@@ -1,16 +1,3 @@
-<header class="header">
-    <ul class="menu">
-        <li class="menu__item">Welcome</li>
-        <li class="menu__item">Portfolio</li>
-        <li class="menu__item">Blog</li>
-        <li class="menu__item">About</li>
-        <li class="menu__item">Contact</li>
-    </ul>
-    <div class="my-name">
-        <p>Petr Janík</p>
-    </div>
-</header>
-
 <main>
     <div class="jumbotron__img"></div>
     <div class="jumbotron__content">
@@ -18,17 +5,6 @@
             Hello. My name is <span class="name--highlighted">Petr Janík</span> and I have creative ideas and build
             websites.
         </h1>
-        <a class="btn">View my Work</a>
+        <%= link_to 'View my Work', "/portfolio", :class => "btn" %>
     </div>
 </main>
-
-<footer class="footer">
-    <ul class="social">
-        <li class="social__icon"><a href="#"><%= image_tag "social/github.svg" %></a></li>
-        <li class="social__icon"><a href="#"><%= image_tag "social/linkedin.svg" %></a></li>
-        <li class="social__icon"><a href="#"><%= image_tag "social/twitter.svg" %></a></li>
-    </ul>
-    <p>&copy; 2020 Petr Janík</p>
-    <p>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
-</footer>
