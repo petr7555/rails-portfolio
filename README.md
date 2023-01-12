@@ -22,6 +22,6 @@ See the website [live](https://rails-portfolio-wfe5.onrender.com/).
 - Install the dependencies:
   - `bundle install`
   - `yarn install`
-- Run migrations: `bundle exec rails db:migrate`
+- Run migrations: `bundle exec rails db:migrate RAILS_ENV=development`
 - Run the server: `bundle exec rails server -p 5000 -e development`
 - Visit the app at [127.0.0.1:5000](http://127.0.0.1:5000/)
